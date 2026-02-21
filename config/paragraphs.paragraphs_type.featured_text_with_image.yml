@@ -1,0 +1,10 @@
+uuid: 7ed1aaa7-dfbc-4cbb-815a-72d08d839afc
+langcode: en
+status: true
+dependencies: {  }
+id: featured_text_with_image
+label: 'Featured text with image'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

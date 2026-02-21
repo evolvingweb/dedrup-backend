@@ -1,0 +1,55 @@
+uuid: 82e6cc08-a934-4905-946b-9ca75b2eafb9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content
+    - node.type.page
+    - paragraphs.paragraphs_type.featured_cards
+    - paragraphs.paragraphs_type.featured_text_with_image
+    - paragraphs.paragraphs_type.hero_banner
+    - paragraphs.paragraphs_type.rich_text
+  module:
+    - entity_reference_revisions
+id: node.page.field_content
+field_name: field_content
+entity_type: node
+bundle: page
+label: Content
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      rich_text: rich_text
+      hero_banner: hero_banner
+      featured_text_with_image: featured_text_with_image
+      featured_cards: featured_cards
+    negate: 0
+    target_bundles_drag_drop:
+      button:
+        weight: 5
+        enabled: false
+      card:
+        weight: 9
+        enabled: false
+      cta_block:
+        weight: 3
+        enabled: false
+      featured_cards:
+        weight: 11
+        enabled: true
+      featured_text_with_image:
+        weight: 8
+        enabled: true
+      hero_banner:
+        weight: 7
+        enabled: true
+      rich_text:
+        weight: 4
+        enabled: true
+field_type: entity_reference_revisions

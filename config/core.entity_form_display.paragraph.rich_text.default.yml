@@ -1,0 +1,23 @@
+uuid: db38c322-4241-419c-9258-a41bcc66272b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.rich_text.field_body
+    - paragraphs.paragraphs_type.rich_text
+id: paragraph.rich_text.default
+targetEntityType: paragraph
+bundle: rich_text
+mode: default
+content:
+  field_body:
+    type: string_textarea
+    weight: 0
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

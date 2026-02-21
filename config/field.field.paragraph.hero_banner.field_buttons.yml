@@ -1,0 +1,40 @@
+uuid: dd2de7ce-7e6a-4bfa-b9a0-866444a65941
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_buttons
+    - paragraphs.paragraphs_type.button
+    - paragraphs.paragraphs_type.hero_banner
+  module:
+    - entity_reference_revisions
+id: paragraph.hero_banner.field_buttons
+field_name: field_buttons
+entity_type: paragraph
+bundle: hero_banner
+label: Buttons
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      button: button
+    negate: 0
+    target_bundles_drag_drop:
+      button:
+        weight: 5
+        enabled: true
+      cta_block:
+        weight: 6
+        enabled: false
+      hero_banner:
+        weight: 7
+        enabled: false
+      rich_text:
+        weight: 8
+        enabled: false
+field_type: entity_reference_revisions
