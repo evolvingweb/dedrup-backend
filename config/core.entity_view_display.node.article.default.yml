@@ -6,11 +6,9 @@ dependencies:
     - field.field.node.article.field_content
     - field.field.node.article.field_image
     - field.field.node.article.field_tags
-    - image.style.wide
     - node.type.article
   module:
     - entity_reference_revisions
-    - image
     - user
 _core:
   default_config_hash: br6izr-iGEu--JvNbCJNtOBpRnxpFLXfoV5y61U9Nqc
@@ -26,18 +24,16 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    weight: 101
+    weight: 3
     region: content
   field_image:
-    type: image
-    label: hidden
+    type: entity_reference_entity_view
+    label: above
     settings:
-      image_link: ''
-      image_style: wide
-      image_loading:
-        attribute: eager
+      view_mode: full
+      link: false
     third_party_settings: {  }
-    weight: -1
+    weight: 2
     region: content
   field_tags:
     type: entity_reference_label
@@ -45,11 +41,11 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 10
+    weight: 0
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 1
     region: content
 hidden: {  }

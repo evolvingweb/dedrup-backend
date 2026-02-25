@@ -9,8 +9,7 @@ dependencies:
 third_party_settings:
   jsonapi_defaults:
     default_include:
-      - field_image
-      - uid.field_avatar
+      - 'field_image. field_media_image'
       - components
     default_filter:
       'filter:status': '1'
@@ -135,6 +134,12 @@ resourceFields:
     disabled: false
     fieldName: path
     publicName: path
+    enhancer:
+      id: ''
+  menu_link:
+    disabled: false
+    fieldName: menu_link
+    publicName: menu_link
     enhancer:
       id: ''
   field_content:

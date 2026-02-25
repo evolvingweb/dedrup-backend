@@ -7,10 +7,8 @@ dependencies:
     - field.field.node.article.field_content
     - field.field.node.article.field_image
     - field.field.node.article.field_tags
-    - image.style.medium
     - node.type.article
   module:
-    - image
     - user
 _core:
   default_config_hash: O8PxzfG8DOHHRu6M23kwR6TDPq_MNfYQ10Mp367ICUQ
@@ -19,17 +17,6 @@ targetEntityType: node
 bundle: article
 mode: teaser
 content:
-  field_image:
-    type: image
-    label: hidden
-    settings:
-      image_link: content
-      image_style: medium
-      image_loading:
-        attribute: lazy
-    third_party_settings: {  }
-    weight: -1
-    region: content
   field_tags:
     type: entity_reference_label
     label: above
@@ -43,3 +30,4 @@ content:
     region: content
 hidden:
   field_content: true
+  field_image: true

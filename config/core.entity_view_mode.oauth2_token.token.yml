@@ -1,0 +1,11 @@
+uuid: ddb21762-84cf-4869-a7c5-65c380533d57
+langcode: en
+status: true
+dependencies:
+  module:
+    - simple_oauth
+id: oauth2_token.token
+label: Token
+description: null
+targetEntityType: oauth2_token
+cache: true

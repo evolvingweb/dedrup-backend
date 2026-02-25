@@ -8,7 +8,9 @@ dependencies:
     - comment
     - filter
     - image
+    - media
     - search
+    - subrequests
     - system
 _core:
   default_config_hash: xLG41YbRo2NP-0SgRNTkMzLEuaeibanGXgUTbdIcIIg
@@ -21,5 +23,7 @@ permissions:
   - 'access content'
   - 'access user profiles'
   - 'administer image styles'
+  - 'issue subrequests'
   - 'search content'
   - 'use text format restricted_html'
+  - 'view media'
