@@ -1,0 +1,8 @@
+uuid: 416fcbca-6dbe-4824-b60a-7dc990a29986
+langcode: en
+status: true
+dependencies: {  }
+id: legal
+label: Legal
+description: ''
+locked: false

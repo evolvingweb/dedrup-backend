@@ -8,8 +8,6 @@ dependencies:
     - field.field.paragraph.featured_text_with_image.field_subtitle
     - field.field.paragraph.featured_text_with_image.field_title
     - paragraphs.paragraphs_type.featured_text_with_image
-  module:
-    - image
 id: paragraph.featured_text_with_image.default
 targetEntityType: paragraph
 bundle: featured_text_with_image
@@ -24,15 +22,13 @@ content:
     weight: 2
     region: content
   field_image:
-    type: image
+    type: entity_reference_entity_view
     label: above
     settings:
-      image_link: ''
-      image_style: ''
-      image_loading:
-        attribute: lazy
+      view_mode: default
+      link: false
     third_party_settings: {  }
-    weight: 3
+    weight: 4
     region: content
   field_subtitle:
     type: string

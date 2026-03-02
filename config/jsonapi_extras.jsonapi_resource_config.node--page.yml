@@ -10,10 +10,9 @@ third_party_settings:
   jsonapi_defaults:
     default_include:
       - field_content
-      - field_content.field_background_image
       - field_content.field_buttons
-      - field_content.field_image
-      - field_content.field_cards.field_image
+      - field_content.field_image.field_media_image
+      - field_content.field_cards.field_image.field_media_image
     page_limit: 50
 id: node--page
 disabled: false
@@ -69,13 +68,13 @@ resourceFields:
     enhancer:
       id: ''
   status:
-    disabled: true
+    disabled: false
     fieldName: status
     publicName: status
     enhancer:
       id: ''
   uid:
-    disabled: true
+    disabled: false
     fieldName: uid
     publicName: uid
     enhancer:
@@ -132,6 +131,12 @@ resourceFields:
     disabled: false
     fieldName: path
     publicName: path
+    enhancer:
+      id: ''
+  menu_link:
+    disabled: false
+    fieldName: menu_link
+    publicName: menu_link
     enhancer:
       id: ''
   field_content:

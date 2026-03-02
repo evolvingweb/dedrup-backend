@@ -7,10 +7,9 @@ dependencies:
     - field.field.paragraph.featured_text_with_image.field_image
     - field.field.paragraph.featured_text_with_image.field_subtitle
     - field.field.paragraph.featured_text_with_image.field_title
-    - image.style.thumbnail
     - paragraphs.paragraphs_type.featured_text_with_image
   module:
-    - image
+    - media_library
 id: paragraph.featured_text_with_image.default
 targetEntityType: paragraph
 bundle: featured_text_with_image
@@ -25,12 +24,11 @@ content:
       placeholder: ''
     third_party_settings: {  }
   field_image:
-    type: image_image
-    weight: 3
+    type: media_library_widget
+    weight: 4
     region: content
     settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+      media_types: {  }
     third_party_settings: {  }
   field_subtitle:
     type: string_textfield

@@ -1,15 +1,15 @@
-uuid: fa7e6209-bff4-4b00-9a59-47eb80656852
+uuid: 18ce29ad-1da9-4b59-89d9-1b3c5ecf99bd
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field_image
     - media.type.image
-    - paragraphs.paragraphs_type.card
-id: paragraph.card.field_image
+    - paragraphs.paragraphs_type.hero_banner
+id: paragraph.hero_banner.field_image
 field_name: field_image
 entity_type: paragraph
-bundle: card
+bundle: hero_banner
 label: Image
 description: ''
 required: false
