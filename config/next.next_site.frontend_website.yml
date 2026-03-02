@@ -1,0 +1,11 @@
+uuid: 5925809c-0602-4fc3-bfb8-5cbbcac3d31d
+langcode: en
+status: true
+dependencies: {  }
+id: frontend_website
+label: 'Frontend website'
+base_url: 'http://localhost:3000'
+preview_url: 'http://localhost:3000/api/draft'
+preview_secret: secret
+revalidate_url: 'http://192.168.0.170:3000/api/revalidate'
+revalidate_secret: secret

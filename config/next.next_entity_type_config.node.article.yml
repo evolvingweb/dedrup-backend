@@ -1,0 +1,13 @@
+uuid: 5737d040-b09c-422d-97e0-d4038e953bb5
+langcode: en
+status: true
+dependencies: {  }
+id: node.article
+site_resolver: site_selector
+configuration:
+  sites:
+    frontend_website: frontend_website
+revalidator: cache_tag
+revalidator_configuration:
+  revalidate_page: false
+  additional_paths: ''

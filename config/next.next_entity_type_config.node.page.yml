@@ -1,0 +1,11 @@
+uuid: 0d3c80bc-8bfb-4080-8e48-014b3c346eea
+langcode: en
+status: true
+dependencies: {  }
+id: node.page
+site_resolver: site_selector
+configuration:
+  sites:
+    frontend_website: frontend_website
+revalidator: cache_tag
+revalidator_configuration: {  }

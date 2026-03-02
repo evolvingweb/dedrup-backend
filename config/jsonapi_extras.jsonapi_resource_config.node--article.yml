@@ -20,7 +20,7 @@ third_party_settings:
 id: node--article
 disabled: false
 path: node/article
-resourceType: article
+resourceType: node--article
 resourceFields:
   nid:
     disabled: false

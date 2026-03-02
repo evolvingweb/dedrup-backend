@@ -1,0 +1,16 @@
+uuid: 68d4491c-69c8-4403-b823-55a41ea34814
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - subrequests
+id: nextjs
+label: Next.js
+weight: 4
+is_admin: false
+permissions:
+  - 'access user profiles'
+  - 'bypass node access'
+  - 'issue subrequests'
+  - 'view all revisions'
