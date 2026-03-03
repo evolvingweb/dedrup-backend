@@ -1,10 +1,13 @@
-uuid: 63b4cca5-0f40-402c-820e-b4bbeee7c911
+uuid: 3b7c03ab-f675-48ee-9953-6c8b33c762ea
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field_body
+    - filter.format.basic_html
     - paragraphs.paragraphs_type.rich_text
+  module:
+    - text
 id: paragraph.rich_text.field_body
 field_name: field_body
 entity_type: paragraph
@@ -15,5 +18,7 @@ required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
-settings: {  }
-field_type: string_long
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text_long

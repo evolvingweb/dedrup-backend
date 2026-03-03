@@ -10,7 +10,7 @@ third_party_settings:
   jsonapi_defaults:
     default_include:
       - 'field_image. field_media_image'
-      - components
+      - field_content
     default_filter:
       'filter:status': '1'
     default_sorting:
@@ -145,7 +145,7 @@ resourceFields:
   field_content:
     disabled: false
     fieldName: field_content
-    publicName: components
+    publicName: field_content
     enhancer:
       id: ''
   field_image:
